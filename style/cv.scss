@@ -22,13 +22,8 @@ $percent-gap: 3%;
 	text-align: right;
 
 	right: $percent-gap;
+	left: -$percent-sidebar;
 	top: 1em;
-}
-
-%right-side-content {
-	position: relative;
-	left: $percent-sidebar;
-	width: 100% - $percent-sidebar - $percent-gap;
 }
 
 %header {
@@ -41,7 +36,7 @@ $percent-gap: 3%;
 // Simple reset
 
 * {
-	
+
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -61,13 +56,16 @@ body {
 	font-family: Avenir,Verdana,sans-serif;
 
 	margin: 2em;
+
+	position: relative;
+	left: $percent-sidebar;
+	width: 100% - $percent-sidebar - $percent-gap;
 }
 
 
 // Title
 
 h1 {
-	@extend %right-side-content;
 	@extend %header;
 	font-size: 3em;
 }
@@ -102,7 +100,6 @@ h3 {
 // Other Headings
 
 h4 {
-	@extend %right-side-content;
 	left: $percent-sidebar;
 
 	//font-weight: 800;
@@ -110,28 +107,29 @@ h4 {
 	font-weight: bold;
 	margin-top: 1em;
 
-	code {
-		font-size: 90%;
-		font-family: Monaco,Menlo,monospace,sans-serif;
-		font-weight: normal;
-		color: #aaa;
+}
 
-		position: absolute;
-		text-align: right;
-		right: $percent-gap;
-	}
+// Dates
+
+h4+p code {
+	font-size: 90%;
+	font-family: Monaco,Menlo,monospace,sans-serif;
+	font-weight: normal;
+	color: #aaa;
+
+	position: relative;
+	text-align: right;
+	right: $percent-gap;
 }
 
 
 // Content
 
 p {
-	@extend %right-side-content;
 	margin-bottom: 0.5em;
 }
 
 ul {
-	@extend %right-side-content;
 	list-style: none;
 	columns: 3;
 

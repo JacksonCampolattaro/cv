@@ -3,12 +3,8 @@ h2, h3 {
   width: 17%;
   text-align: right;
   right: 3%;
+  left: -20%;
   top: 1em; }
-
-h1, h4, p, ul {
-  position: relative;
-  left: 20%;
-  width: 77%; }
 
 h1, h2, h3 {
   font-weight: 400;
@@ -28,7 +24,10 @@ body {
   font-size: 100%;
   line-height: 1.5em;
   font-family: Avenir,Verdana,sans-serif;
-  margin: 2em; }
+  margin: 2em;
+  position: relative;
+  left: 20%;
+  width: 77%; }
 
 h1 {
   font-size: 3em; }
@@ -50,14 +49,15 @@ h4 {
   left: 20%;
   font-weight: bold;
   margin-top: 1em; }
-  h4 code {
-    font-size: 90%;
-    font-family: Monaco,Menlo,monospace,sans-serif;
-    font-weight: normal;
-    color: #aaa;
-    position: absolute;
-    text-align: right;
-    right: 3%; }
+
+h4 + p code {
+  font-size: 90%;
+  font-family: Monaco,Menlo,monospace,sans-serif;
+  font-weight: normal;
+  color: #aaa;
+  position: relative;
+  text-align: right;
+  right: 3%; }
 
 p {
   margin-bottom: 0.5em; }
