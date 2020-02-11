@@ -1,8 +1,3 @@
----
-layout: cv
-title: Jackson Campolattaro's CV
----
-
 # Jackson Campolattaro
 
 Computer Engineering student at Virginia Tech

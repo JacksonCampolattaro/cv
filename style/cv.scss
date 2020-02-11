@@ -13,6 +13,21 @@ $color-link-hover: $color-secondary;
 $percent-sidebar: 25%;
 
 
+// Useful base classes
+
+%left-side-content {
+	position: relative;
+	width: $percent-sidebar;
+	text-align: right;
+}
+
+%right-side-content {
+	position: relative;
+	left: $percent-sidebar;
+	width: 100% - $percent-sidebar;
+}
+
+
 // Default settings
 
 body {
@@ -30,6 +45,7 @@ body {
 // Title
 
 h1 {
+	@extend %right-side-content;
 	font-weight: 400;
 	font-family: Avenir,Cousine,Verdana,sans-serif;
 	font-size: 3em;
@@ -39,6 +55,7 @@ h1 {
 // Left side Headers
 
 h2 {
+	@extend %left-side-content;
 	color: $color-primary;
 	font-weight: 400;
 	font-family: Avenir,Cousine,Verdana,sans-serif;
@@ -46,6 +63,7 @@ h2 {
 }
 
 h3 {
+	@extend %left-side-content;
 	color: $color-on-background;
 	font-weight: 400;
 	font-family: Avenir,Cousine,Verdana,sans-serif;
@@ -55,7 +73,22 @@ h3 {
 // Other Headings
 
 h4 {
+	@extend %right-side-content;
+	position: relative;
+	left: $percent-sidebar;
+}
 
+
+// Content
+
+p {
+	@extend %right-side-content;
+	position: relative;
+	left: $percent-sidebar;
+}
+
+ul {
+	@extend %right-side-content;
 }
 
 
