@@ -1,3 +1,33 @@
+body {
+  font: normal normal 400;
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: Avenir,Verdana,sans-serif;
+  margin-top: 1em;
+  margin-left: 1em;
+  text-align: left; }
 
+h1 {
+  font-weight: 400;
+  font-family: Avenir,Cousine,Verdana,sans-serif;
+  font-size: 3em; }
+
+h2 {
+  color: #bc412b;
+  font-weight: 400;
+  font-family: Avenir,Cousine,Verdana,sans-serif;
+  font-size: 1.5em; }
+
+h3 {
+  color: #000;
+  font-weight: 400;
+  font-family: Avenir,Cousine,Verdana,sans-serif;
+  font-size: 1.1em; }
+
+a {
+  text-decoration: none;
+  color: #bc412b; }
+  a:hover {
+    color: #39f; }
 
 /*# sourceMappingURL=cv.css.map */
