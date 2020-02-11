@@ -2,15 +2,10 @@
 
 Computer Engineering student at Virginia Tech
 
-<div id="webaddress">
-<a href="mailto:jackcamp@vt.edu">jackcamp@vt.edu</a>
-|
-<a href="tel:703-772-1748">(703) 772-1748</a>
-|
-<a href="https://www.linkedin.com/in/JacksonCampolattaro/">linkedin.com/in/JacksonCampolattaro</a>
-|
-<a href="https://github.com/JacksonCampolattaro">github.com/JacksonCampolattaro</a>
-</div>
+[jackcamp@vt.edu](mailto:jackcamp@vt.edu) | 
+[(703) 772-1748](tel:+1703 772 1748) | 
+[linkedin.com/in/JacksonCampolattaro](https://www.linkedin.com/in/JacksonCampolattaro/) | 
+[github.com/JacksonCampolattaro](https://github.com/JacksonCampolattaro)
 
 ## About
 
@@ -36,8 +31,7 @@ Anticipated graduation Spring 2022 or earlier
 
 ### Languages
 
-`5 Years experience`
-**C++**
+#### C++ `5 Years experience`
 
 * Unit testing (Catch2)
 * Event-driven programming (libsigc++ & Qt)
@@ -46,14 +40,13 @@ Anticipated graduation Spring 2022 or earlier
 * Interface design (Gtkmm, Qt)
 * 3D Graphics (OpenGL, GLFW, Raylib, Qt3D, Magnum)
 
-`3 Years experience`
-**Java**
+#### Java `3 Years experience`
 
 * Unit testing (JUnit)
 * Event-driven programming (Curriculum-specific libraries)
 
-`1 Year Experience`
-**C, x86 Assembly, Verilog, HTML + CSS / Sass, Octave / Matlab**
+
+#### C, x86 Assembly, Verilog, HTML + CSS / Sass, Octave / Matlab `1 Year Experience`
 
 ### Tools
 
@@ -70,25 +63,21 @@ Anticipated graduation Spring 2022 or earlier
 
 ## Employment
 
-`June 2019–August 2019`
-**Telos Corporation Innovation Committee**
+#### Telos Corporation Innovation Committee `June 2019–August 2019`
 
 Intern, worked in a 7 person group of interns researching the viability of future software security products. 
 Built the frontend of a replacement for Telos’ employee intranet solution.
 
-`May 2018`
-**Janelia HHMI Capstone Program**
+#### Janelia HHMI Capstone Program `May 2018`
 
 Worked with engineers and other students designing LabView based software and
 equipment to be used by medical researchers at Janelia.
 
-`September 2016–June 2018`
-**Math Tutor (Self Employed)**
+#### Math Tutor (Self Employed) `September 2016–June 2018`
 
 Scheduled appointments and worked with approximately 20 different students 4th-9th grade to help them with subjects they struggled with.
 
-`March 2014–March 2018`
-**Brambleton Kids Run The Nation**
+#### Brambleton Kids Run The Nation `March 2014–March 2018`
 
 Assisted coaches in and out of practices, encouraging students ages 5-14.
 

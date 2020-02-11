@@ -1,26 +1,40 @@
 h2, h3 {
   position: relative;
-  width: 25%;
-  text-align: right; }
+  width: 22%;
+  text-align: right;
+  right: 3%;
+  top: 1em; }
 
 h1, h4, p, ul {
   position: relative;
   left: 25%;
-  width: 75%; }
+  width: 72%; }
 
 body {
   font: normal normal 400;
   font-size: 100%;
   line-height: 1.5em;
   font-family: Avenir,Verdana,sans-serif;
+  line-height: 1;
   margin-top: 1em;
   margin-left: 1em;
-  text-align: left; }
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
 h1 {
   font-weight: 400;
   font-family: Avenir,Cousine,Verdana,sans-serif;
   font-size: 3em; }
+
+h1 + p {
+  font-style: italic;
+  font-size: 1.5;
+  margin-top: 1em; }
 
 h2 {
   color: #bc412b;

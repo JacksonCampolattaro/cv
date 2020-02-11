@@ -11,20 +11,24 @@ $color-link-hover: $color-secondary;
 // Variables
 
 $percent-sidebar: 25%;
+$percent-gap: 3%;
 
 
 // Useful base classes
 
 %left-side-content {
 	position: relative;
-	width: $percent-sidebar;
+	width: $percent-sidebar - $percent-gap;
 	text-align: right;
+
+	right: $percent-gap;
+	top: 1em;
 }
 
 %right-side-content {
 	position: relative;
 	left: $percent-sidebar;
-	width: 100% - $percent-sidebar;
+	width: 100% - $percent-sidebar - $percent-gap;
 }
 
 
@@ -36,11 +40,20 @@ body {
 	line-height: 1.5em;
 	font-family: Avenir,Verdana,sans-serif;
 
+	line-height: 1;
 	margin-top: 1em;
 	margin-left: 1em;
 
 	text-align: left;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+
 
 // Title
 
@@ -49,6 +62,15 @@ h1 {
 	font-weight: 400;
 	font-family: Avenir,Cousine,Verdana,sans-serif;
 	font-size: 3em;
+}
+
+
+// Subtitle
+
+h1+p {
+	font-style: italic;
+	font-size: 1.5;
+	margin-top: 1em;
 }
 
 
@@ -69,6 +91,7 @@ h3 {
 	font-family: Avenir,Cousine,Verdana,sans-serif;
 	font-size: 1.1em;
 }
+
 
 // Other Headings
 
