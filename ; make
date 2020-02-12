@@ -58,7 +58,7 @@ body {
 
 	font-family: Avenir,Verdana,sans-serif;
 
-	margin: 2rem;
+	margin: 2em;
 
 	position: relative;
 	left: $percent-sidebar;
