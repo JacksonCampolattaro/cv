@@ -1,26 +1,61 @@
 
-\documentclass[11pt, letterpaper, sans]{moderncv}
+\documentclass[10pt, letterpaper, sans]{moderncv}
 
 % ModernCV Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\moderncvtheme{classic}
+\moderncvtheme{fancy}
 \moderncvcolor{blue}
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{4cm}
 
 % Personal Information
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\firstname{Jackson}
-\familyname{Campolattaro}
+\name{Jackson}{Campolattaro}
+\email{jackcamp@vt.edu}
+\social[linkedin]{jacksoncampolattaro}
+\social[github]{JacksonCampolattaro}
+
+\quote{
+Self-motivated Computer Engineering Student 
+with an enthusiasm for Open Source and a strong work ethic. 
+Seeking a position as part of an established software development team.
+}
+
 
 % Document Content
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\maketitle
+\makecvtitle
 
+\section{Education}
+\cvitem{}{Sophomore at Virginia Tech}
+\cvitem{}{Pursuing a major in Computer Engineering with a minor in Computer Science}
+\cvitem{}{98 Credit Hours Earned}
+\cvitem{}{Anticipated graduation Spring 2022 or earlier}
+\subsection{Courseload}
+\cvitem{}{
+\begin{itemize}
+	\item Applied Software Design (Level 3 C++)
+	\item Unix for Engineers (Linux, Bash)
+\end{itemize}
+}
 
+\section{Skills}
+\subsection{Languages}
+\cvitem{C++}{
+	\begin{itemize}
+		\item Unit testing (Catch2)
+		\item Event-driven programming (libsigc++ \& Qt)
+		\item Concurrency (OpenMP, TBB, Posix)
+		\item Smart pointers
+		\item Interface design (Gtkmm, Qt)
+		\item 3D Graphics (OpenGL, GLFW, Raylib, Qt3D, Magnum)
+	\end{itemize}
+}
 
 
 
