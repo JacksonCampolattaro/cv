@@ -1,13 +1,18 @@
 
-\documentclass[11pt, letterpaper, sans]{moderncv}
+\documentclass[11pt,a4paper, sans]{moderncv}
+%\usepackage{FiraSans} 
 
 % ModernCV Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage[scale=0.84, top=2cm, bottom=1cm]{geometry}
+\usepackage{multicol}
+
 \moderncvtheme{fancy}
-\moderncvcolor{blue}
-\usepackage[scale=0.80]{geometry}
+\moderncvcolor{red}
 \setlength{\hintscolumnwidth}{4cm}
+\nopagenumbers{}
+
 
 % Personal Information
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,18 +70,32 @@
 \cvitem{C, x86 Assembly, Verilog, HTML + CSS / Sass, Octave / Matlab}{}
 \subsection{Tools}
 \cvitem{}{
+	\begin{multicols}{4}
 	\begin{itemize}
 		\item Git
-		\item CLion, intelliJ, PHPStorm, Vim, eclipse
-		\item GCC, Javac
-		\item Cmake, Make
-		\item GDB, Valgrind, Perf
-		\item Linux (Fedora, CentOS)
-		\item VirtualBox, Vagrant
-		\item Ansible Playbook, Bash Scripting
-		\item Doxygen, JavaDoc
-		\item Markdown, LaTeX
+		\item Linux 
+		\item CLion
+		\item intelliJ
+		\item PHPStorm
+		\item Vim
+		\item Eclipse
+		\item GCC
+		\item Javac
+		\item Cmake
+		\item Make
+		\item GDB
+		\item Valgrind
+		\item Perf
+		\item VirtualBox
+		\item Vagrant
+		\item Ansible
+		\item Bash Scripting
+		\item Doxygen
+		\item JavaDoc
+		\item Markdown
+		\item LaTeX
 	\end{itemize}
+	\end{multicols}
 }
 
 \section{Employment}
