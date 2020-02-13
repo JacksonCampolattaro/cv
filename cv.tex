@@ -1,16 +1,16 @@
 
-\documentclass[11pt, a4paper, sans]{moderncv}
+\documentclass[10pt, a4paper, sans]{moderncv}
 %\usepackage{FiraSans} 
 
 % ModernCV Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[scale=0.84]{geometry}
+\usepackage[scale=0.859]{geometry}
 \usepackage{multicol}
 
 \moderncvtheme{fancy}
 \moderncvcolor{red}
-\setlength{\hintscolumnwidth}{4cm}
+\setlength{\hintscolumnwidth}{3.3cm}
 \nopagenumbers{}
 
 
@@ -54,49 +54,53 @@
 \section{Skills}
 \subsection{Languages}
 \cvitem{C++}{
+	\begin{multicols}{2}
 	\begin{itemize}
 		\item Unit testing (Catch2)
-		\item Event-driven programming (libsigc++ \& Qt)
+		\item Event handling (libsigc++ \& Qt)
 		\item Concurrency (OpenMP, TBB, Posix)
 		\item Smart pointers
 		\item Interface design (Gtkmm, Qt)
 		\item 3D Graphics (OpenGL, GLFW, Raylib, Qt3D, Magnum)
 	\end{itemize}
+	\end{multicols}
 }
 \cvitem{Java}{
+	\begin{multicols}{2}
 	\begin{itemize}
 		\item Unit testing (JUnit)
-		\item Event-driven programming (Curriculum-specific libraries)
+		\item Event handling 
 	\end{itemize}
+	\end{multicols}
 }
-\cvitem{}{C, x86 Assembly, Verilog, HTML + CSS / Sass, Octave / Matlab}
+\cvitem{Others}{C, x86 Assembly, Verilog, HTML + CSS / Sass, Octave / Matlab}
 \subsection{Tools}
 \cvitem{}{
 	\begin{multicols}{4}
-	\begin{itemize}
-		\item Git
-		\item Linux 
-		\item CLion
-		\item intelliJ
-		\item PHPStorm
-		\item Vim
-		\item Eclipse
-		\item GCC
-		\item Javac
-		\item Cmake
-		\item Make
-		\item GDB
-		\item Valgrind
-		\item Perf
-		\item VirtualBox
-		\item Vagrant
-		\item Ansible
-		\item Bash Scripting
-		\item Doxygen
-		\item JavaDoc
-		\item Markdown
-		\item LaTeX
-	\end{itemize}
+		\begin{itemize}
+			\item Git
+			\item Linux 
+			\item CLion
+			\item intelliJ
+			\item PHPStorm
+			\item Vim
+			\item Eclipse
+			\item GCC
+			\item Javac
+			\item Cmake
+			\item Make
+			\item GDB
+			\item Valgrind
+			\item Perf
+			\item VirtualBox
+			\item Vagrant
+			\item Ansible
+			\item Bash Scripting
+			\item Doxygen
+			\item JavaDoc
+			\item Markdown
+			\item LaTeX
+		\end{itemize}
 	\end{multicols}
 }
 
