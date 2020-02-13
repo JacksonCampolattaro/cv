@@ -1,3 +1,3 @@
 
 pdf: cv.tex
-	pdflatex cv.tex
+	pdflatex -output-directory=out cv.tex
