@@ -7,6 +7,8 @@
 
 \usepackage[scale=0.859]{geometry}
 \usepackage{multicol}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
 
 \moderncvtheme{fancy}
 \moderncvcolor{red}
@@ -53,22 +55,28 @@
 \section{Skills}
 \subsection{Languages}
 \cventry{5 Years}{C++}{}{}{}{
-	\begin{multicols}{2}
-	\begin{itemize}
-		\item[] Unit testing (Catch2)
-		\item[] Event handling (libsigc++ \& Qt)
-		\item[] Concurrency (OpenMP, TBB, Posix)
-		\item[] Smart pointers
-		\item[] Interface design (Gtkmm, Qt)
-		\item[] 3D Graphics (OpenGL, GLFW, Raylib, Qt3D, Magnum)
-	\end{itemize}
+	Libraries: 
+	Catch2, libsigc++, OpenMP, Intel TBB, Posix Threads, 
+	Gtkmm, Qt, OpenGL, GLFW, Magnum, CLI11, spdlog
+	\begin{multicols}{3}
+		\begin{itemize}
+			\item Unit testing 
+			\item Event handling
+			\item Concurrency
+			\item Smart Pointers
+			\item Interface Construction
+			\item Argument Parsing
+			\item Multi-level Logging
+			\item 3d SceneGraphs
+			\item Framebuffers
+		\end{itemize}
 	\end{multicols}
 }
 \cvitem{Java}{
 	\begin{multicols}{2}
 	\begin{itemize}
-		\item[] Unit testing (JUnit)
-		\item[] Event handling 
+		\item Unit testing (JUnit)
+		\item Event handling 
 	\end{itemize}
 	\end{multicols}
 }
