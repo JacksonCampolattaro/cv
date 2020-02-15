@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  15 FEB 2020 02:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.12)  15 FEB 2020 02:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,15 +983,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
 [1
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
 
 (out/cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
@@ -1000,11 +1000,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24484 strings out of 494553
- 416047 string characters out of 6177318
- 498817 words of memory out of 5000000
+ 24485 strings out of 494553
+ 416063 string characters out of 6177318
+ 497817 words of memory out of 5000000
  27902 multiletter control sequences out of 15000+600000
- 588594 words of font info for 67 fonts, out of 8000000 for 9000
+ 588703 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,13n,65p,768b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
@@ -1018,10 +1018,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsso10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/lm/lmsso12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsso
 9.pfb>
-Output written on out/cv.pdf (2 pages, 207565 bytes).
+Output written on out/cv.pdf (1 page, 206843 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  17985 words of extra memory for PDF output out of 20736 (max. 10000000)
 
