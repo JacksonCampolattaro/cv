@@ -1,4 +1,3 @@
-
 \documentclass[10pt, a4paper, sans]{moderncv}
 %\usepackage{FiraSans} 
 
@@ -29,9 +28,10 @@
 \social[github]{JacksonCampolattaro}
 
 \quote{
-	Self-motivated Computer Engineering Student 
-	with an enthusiasm for Open Source and a strong work ethic. 
-	Seeking a position as part of an established software development team.
+    Self-motivated Computer Engineering Student
+    with an enthusiasm for Open Source and a strong work ethic.
+    I enjoy learning new tools and techniques,
+    and use personal project as a medium for exploration.
 }
 
 % Document Content
@@ -41,63 +41,57 @@
 
 \makecvtitle
 
-\section{Education}
-\cventry{Graduation Spring 2022}{Virginia Polytechnic}{Computer Engineering}{}{}{
-	Pursuing a major in Computer Engineering 
-	with a minor in Computer Science.
-	117 Credit Hours Earned
-}
 
+\section{Education}
+\cventry{Graduation Spring 2021}{Virginia Polytechnic}{Computer Engineering}{}{}{
+    Pursuing a major in Computer Engineering
+    with a minor and specialization in Computer Science.
+    117 Credit Hours Earned.
+    Expected to graduate 1 year early due to accelerated classes.
+}
 \section{Skills}
+
 \subsection{Languages}
-\cventry{5 Years Experience}{C++}{}{}{}{
-	Libraries: 
-	Catch2, libsigc++, OpenMP, Intel TBB, Posix Threads, 
-	Gtkmm, Qt, OpenGL, GLFW, Magnum, CLI11, spdlog, Cereal
-	\begin{multicols}{3}
-		\begin{itemize}
-			\item Unit testing 
-			\item Signals \& Sinks
-			\item Concurrency
-			\item Smart Pointers
-			\item Interface Construction
-			\item Argument Parsing
-			\item Multi-level Logging
-			\item 3d SceneGraphs
-			\item Framebuffers
-		\end{itemize}
-	\end{multicols}
+\cventry{6 Years Experience}{C++}{}{}{}{
+    Libraries:
+    Catch2, libsigc++, OpenMP, Intel TBB, Posix Threads,
+    Gtkmm, Qt, OpenGL, GLFW, Magnum, CLI11, spdlog, Cereal,
+    TOML11, Libsoundio, FFTW
+}
+\cventry{2 Years Experience}{C}{}{}{}{
+    Libraries:
+    Jansson, LibJWT
+}
+\cventry{2 Years Experience}{Python}{}{}{}{
+    Libraries:
+    OpenCV
 }
 \cventry{In Order of Experience}{Others}{}{}{}{
-	Java, C, HTML + CSS / Sass, Octave / Matlab, Verilog, LabView, Assembly
-}
-\subsection{Tools}
-\cvitem{}{
-	\begin{multicols}{6}
-		\begin{itemize}
-			\item[] Git
-			\item[] Linux 
-			\item[] CLion
-			\item[] intelliJ
-			\item[] Vim
-			\item[] Cmake
-			\item[] Make
-			\item[] GDB
-			\item[] Valgrind
-			\item[] Perf
-			\item[] VirtualBox
-			\item[] Vagrant
-			\item[] Travis CI
-			\item[] Ansible
-			\item[] Bash 
-			\item[] Doxygen
-			\item[] Markdown
-			\item[] \LaTeX
-		\end{itemize}
-	\end{multicols}
+    Java, Rust, Verilog, HTML + CSS / Sass, Octave / Matlab, LabView, MIPS Assembly, x86 Assembly
 }
 
+\subsection{Tools}
+\cvitem{}{
+    \begin{multicols}{4}
+        \begin{itemize}
+            \item[] Git
+            \item[] Linux
+            \item[] Valgrind
+            \item[] GDB
+            \item[] Perf
+            \item[] Travis CI
+            \item[] Github Actions
+            \item[] Ansible
+            \item[] Doxygen
+            \item[] Markdown
+            \item[] \LaTeX
+        \end{itemize}
+    \end{multicols}
+}
+
+
 \section{Experience}
+
 \subsection{Employment}
 \cventry{May 2020--September 2020}{Google Summer of Code Apprentice}{CGAL}{}{}{
     Working remotely with a mentor in France to develop a new software package.
@@ -105,30 +99,30 @@
     Required a mix of working with legacy code and creating entirely new code.
 }
 \cventry{June 2019--August 2019}{Innovation Committee Member}{Telos Corporation}{}{}{
-	Worked in a 7 person group of interns 
-	researching the viability of future software security products. 
-	Built the frontend of a replacement for Telos’ employee intranet solution.
+    Worked in a 7 person group of interns
+    researching the viability of future software security products.
+    Built the frontend of a replacement for Telos’ employee intranet solution.
 }
-\cventry{May 2018}{Capstone Program Participant}{Janelia HHMI}{}{}{
-	Worked with engineers and other students 
-	designing LabView based software and equipment 
-	to be used by medical researchers at Janelia.
-}
-\cventry{September 2016--June 2019}{Math Tutor}{Self-employed}{}{}{}
-\cventry{March 2014--March 2018}{Coach}{Brambleton Kids Run The Nation}{}{}{}
+
 \subsection{Projects}
-\cventry{July 2018--Present}{N-Body}{C++}{}{}{
-	Building a multi-threaded dynamical simulation tool to improve my 
-	familiarity with optimization, build tools, design patterns,
-	and libraries. 
-	Incorporated concepts including concurrency, event-driven programming,
-	serialization, cache-optimization, and tree algorithms among others.
+\cventry{August 2020--Present}{Quarter ID}{Python}{}{}{
+    Leading a small team of interdisceplenary engineering students 
+    to develop a solution which determines the value of collectible coins using machine vision.
+    Involves industrial imaging and lighting hardware,
+    paired with bespoke software written in Python using OpenCV.
 }
-\cventry{November 2019}{Ansible provisioning}{YAML, Bash}{}{}{
-	Assembled a set of Ansible tasks which streamline the process 
-	of configuring my build environment on a new computer,
-	increasing my productivity by storing dotfiles and dependency manifests
-	in GitHub.
+\cventry{August 2020--December 2020}{Spectrogram}{C++}{}{}{
+    Developed a low-latency Spectrogram audio frequency visualizer alongside two other students.
+    Involved navigating real-time limitations in a contemporary event-driven desktop application,
+    as well as CI, build system engineering, and other team management logistics.
+}
+\cventry{July 2018--Present}{N-Body}{C++}{}{}{
+    Building a multi-threaded dynamical simulation tool to improve my
+    familiarity with optimization, build tools, design patterns,
+    and libraries.
+    Incorporated concepts including concurrency, event-driven programming,
+    serialization, cache-optimization, and tree algorithms among others.
 }
 
 \end{document}
+
