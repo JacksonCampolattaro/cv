@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.30)  11 DEC 2020 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.30)  12 DEC 2020 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,9 +404,9 @@ File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 \cvitemwithcommentmainlength=\skip82
 \cvitemwithcommentcommentlength=\skip83
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/moderncv/moderncvcolorred.sty
-Package: moderncvcolorred 2015/07/28 v2.0.0 modern curriculum vitae and letter 
-color scheme: red
+(/usr/share/texlive/texmf-dist/tex/latex/moderncv/moderncvcolorgrey.sty
+Package: moderncvcolorgrey 2015/07/28 v2.0.0 modern curriculum vitae and letter
+ color scheme: grey
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
@@ -623,15 +623,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(42.12624pt, 513.25539pt, 42.12625pt)
-* v-part:(T,H,B)=(47.66281pt, 725.88977pt, 71.49426pt)
+* h-part:(L,W,R)=(44.81126pt, 507.88533pt, 44.81128pt)
+* v-part:(T,H,B)=(50.70074pt, 718.29497pt, 76.05113pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=513.25539pt
-* \textheight=725.88977pt
-* \oddsidemargin=-30.14375pt
-* \evensidemargin=-30.14375pt
-* \topmargin=-61.60718pt
+* \textwidth=507.88533pt
+* \textheight=718.29497pt
+* \oddsidemargin=-27.45872pt
+* \evensidemargin=-27.45872pt
+* \topmargin=-58.56924pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -733,11 +733,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 14946 strings out of 482555
- 232114 string characters out of 5952144
- 525812 words of memory out of 5000000
+ 14942 strings out of 482555
+ 232075 string characters out of 5952144
+ 525851 words of memory out of 5000000
  30288 multiletter control sequences out of 15000+600000
- 589008 words of font info for 72 fonts, out of 8000000 for 9000
+ 588753 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,13n,49p,768b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
@@ -751,7 +751,7 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsso10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/lm/lmsso12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsso
 9.pfb>
-Output written on out/cv.pdf (1 page, 197266 bytes).
+Output written on out/cv.pdf (1 page, 197152 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
