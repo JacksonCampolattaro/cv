@@ -4,7 +4,7 @@
 % ModernCV Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[scale=0.87]{geometry}
+\usepackage[scale=0.8]{geometry}
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[itemize]{noitemsep, topsep=0pt}
@@ -16,22 +16,44 @@
 \nopagenumbers{}
 
 
+\usepackage{xcolor}
+
+\colorlet{languagecolor}{red}
+\colorlet{nolanguagecolor}{gray}
+\newcount\languagecount
+\newcommand\languageknowledge[2]
+  {%
+    \hbox
+      {%
+        \makebox[1.5cm][l]{#1}%
+        \languagecount=0
+        \loop\ifnum\languagecount<#2
+          \advance\languagecount1
+          \textcolor{languagecolor}{$\bullet$}%
+        \repeat
+        \loop\ifnum\languagecount<5
+          \advance\languagecount1
+          \textcolor{nolanguagecolor}{$\bullet$}%
+        \repeat
+      }%
+  }
+
+
 % Personal Information
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \name{Jackson}{Campolattaro}
 
-\address{22784 Portico Pl.}{Ashburn, VA}{20148, USA}
-\email{jackcamp@vt.edu}
-\phone[mobile]{(703) 772-1748}
+\address{Aan't Verlaat 33D}{Delft, Zuid-Holland}{2612XW, NL}
+\email{j.campolattaro@student.tudelft.nl}
+\phone[mobile]{+31 6 3030 7107}
 \social[linkedin]{jacksoncampolattaro}
 \social[github]{JacksonCampolattaro}
 
 \quote{
     Self-motivated Computer Engineering student
     with programming experience and an enthusiasm for Open Source principles.\\
-    I use complex, long-term personal projects as a medium for exploration 
-    of new programming languages, tools, and techniques.
+    I use complex, long-term personal projects as a medium for exploration of new programming languages, tools, and techniques.
 }
 
 % Document Content
@@ -41,35 +63,34 @@
 
 \makecvtitle
 
-
 \section{Education}
-\cvitem{}{GPA 3.64 in-major, 3.46 overall}
+
+\cventry{Fall 2021--Spring 2023}{TU Delft}{Computer Engineering}{}{}{
+    Research-oriented Master in Computer Engineering
+}
 
 \cventry{Fall 2018--Spring 2021}{Virginia Polytechnic}{Computer Engineering}{}{}{
-    Major in Computer Engineering
-    with a minor and specialization in Computer Science.
-    Graduated 1 year early due to accelerated classes.
+    Major in Computer Engineering with a minor and specialization in Computer Science.
+    Graduated 1 year early due to accelerated classes, GPA 3.64/4.00 in-major, 3.46/4.00 overall.
 }
 
 \section{Skills}
 
 \subsection{Languages}
-\cventry{6 Years Experience}{C++}{}{}{}{
+\cventry{7 Years Experience}{C++}{}{}{}{
+    %Multithreading, Multiprocessor, Low-latency computing, Template Metaprogramming
     Libraries:
     Catch2, libsigc++, OpenMP, Intel TBB, Posix Threads,
-    Gtkmm, Qt, OpenGL, GLFW, Magnum, CLI11, spdlog, 
+    Gtkmm, Qt, OpenGL, GLFW, Magnum, CLI11, spdlog,
     Cereal, RapidJSON, TOML11, Libsoundio, FFTW
 }
-\cventry{2 Years Experience}{C}{}{}{}{
+\cventry{4 Years Experience}{C, Python, Java}{}{}{}{
+    %Multiprocessor, Real-time systems
     Libraries:
     Jansson, LibJWT
 }
-\cventry{2 Years Experience}{Python}{}{}{}{
-    Libraries:
-    OpenCV
-}
 \cventry{In Order of Experience}{Others}{}{}{}{
-    Java, Rust, Verilog, HTML + CSS / Sass, Octave / Matlab, LabView, MIPS Assembly, x86 Assembly
+    Rust, CUDA, Verilog, HTML + CSS/Sass, Octave/Matlab, MIPS Assembly, x86 Assembly
 }
 
 \subsection{Tools}
@@ -81,12 +102,12 @@
             \item[] Valgrind
             \item[] GDB
             \item[] Perf
+            \item[] Tensorflow
             \item[] Travis CI
             \item[] Github Actions
             \item[] Ansible
             \item[] Doxygen
             \item[] Markdown
-            \item[] Basler Pylon
             \item[] \LaTeX
         \end{itemize}
     \end{multicols}
@@ -95,6 +116,10 @@
 \section{Experience}
 
 \subsection{Employment}
+\cventry{May 2021--August 2021}{SIMD Research Internship}{Inria}{}{}{
+    Worked alongside PhD students at Inria Research Center Sophia Antipolis to incorporate SIMD concepts into CGALs
+    collision detection packages, improving performance.
+}
 \cventry{May 2020--August 2020}{Google Summer of Code Apprentice}{CGAL}{}{}{
     Worked remotely with a mentor in France to develop a new software package.
     The project is an Octree data structure, used in other packages.
@@ -107,11 +132,10 @@
 }
 
 \subsection{Projects}
-\cventry{August 2020--Present}{Quarter ID}{Python}{}{}{
-    Leading a small team of interdisceplenary engineering students
+\cventry{August 2020--June 2021}{Quarter ID}{Python}{}{}{
+    Lead a small team of interdisceplenary engineering students
     to develop a solution which determines the value of collectible coins using machine vision.
-    Involves industrial imaging and lighting hardware,
-    paired with bespoke software written in Python using OpenCV.
+    Involved industrial imaging and lighting hardware, paired with bespoke software written in Python using OpenCV.
 }
 \cventry{July 2018--Present}{N-Body}{C++}{}{}{
     Independently building a multi-threaded dynamical simulation tool to improve my
