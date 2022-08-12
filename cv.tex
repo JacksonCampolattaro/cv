@@ -1,42 +1,45 @@
-\documentclass[10pt, a4paper, sans]{moderncv}
-%\usepackage{FiraSans} 
+\documentclass[a4paper, sans]{moderncv}
+\usepackage[9pt]{extsizes}
 
 % ModernCV Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.85]{geometry}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fontspec}
+
+\setmainfont{IBMPlexSans}
+
 \setlist[itemize]{noitemsep, topsep=0pt}
 \setlength{\multicolsep}{2pt}
 
 \moderncvtheme{fancy}
 \moderncvcolor{grey}
-\setlength{\hintscolumnwidth}{3.3cm}
+\setlength{\hintscolumnwidth}{4.5cm}
 \nopagenumbers{}
 
-
-\usepackage{xcolor}
 
 \colorlet{languagecolor}{red}
 \colorlet{nolanguagecolor}{gray}
 \newcount\languagecount
 \newcommand\languageknowledge[2]
-  {%
+{%
     \hbox
-      {%
+    {%
         \makebox[1.5cm][l]{#1}%
         \languagecount=0
-        \loop\ifnum\languagecount<#2
-          \advance\languagecount1
-          \textcolor{languagecolor}{$\bullet$}%
-        \repeat
-        \loop\ifnum\languagecount<5
-          \advance\languagecount1
-          \textcolor{nolanguagecolor}{$\bullet$}%
-        \repeat
-      }%
-  }
+    \loop\ifnum\languagecount<#2
+    \advance\languagecount1
+    \textcolor{languagecolor}{$\bullet$}%
+    \repeat
+    \loop\ifnum\languagecount<5
+    \advance\languagecount1
+    \textcolor{nolanguagecolor}{$\bullet$}%
+    \repeat
+    }%
+}
 
 
 % Personal Information
@@ -45,109 +48,119 @@
 \name{Jackson}{Campolattaro}
 
 \address{Aan't Verlaat 33D}{Delft, Zuid-Holland}{2612XW, NL}
-\email{j.campolattaro@student.tudelft.nl}
+\email{jackson.campolattaro@gmail.com}
 \phone[mobile]{+31 6 3030 7107}
 \social[linkedin]{jacksoncampolattaro}
 \social[github]{JacksonCampolattaro}
+\extrainfo{jackson.campolattaro.nl}
 
 \quote{
     Self-motivated Computer Engineering student
-    with programming experience and an enthusiasm for Open Source principles.\\
-    I use complex, long-term personal projects as a medium for exploration of new programming languages, tools, and techniques.
+    with programming experience and an enthusiasm for Open Source principles.
+    I'm currently seeking a software-focused thesis position in the Netherlands,
+    with intentions to stay after my graduation.
 }
+
+\renewcommand*\namefont{\fontspec{IBMPlexSans}\fontsize{34}{36}\selectfont}
+\renewcommand*\titlefont{\fontspec{IBMPlexSans}\fontsize{15}{18}\selectfont}
+\renewcommand*\addressfont{\fontspec{IBMPlexSans}\fontsize{7}{9}\selectfont}
+\renewcommand*\sectionfont{\fontspec{IBMPlexSans}\fontsize{12}{14}\selectfont}
+\renewcommand*\subsectionfont{\fontspec{IBMPlexSans}\fontsize{10}{12}\selectfont}
+\renewcommand*\quotefont{\fontspec{IBMPlexSans}\fontsize{9}{11}\selectfont}
 
 % Document Content
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\makecvtitle
+    \makecvtitle
 
-\section{Education}
 
-\cventry{Fall 2021--Spring 2023}{TU Delft}{Computer Engineering}{}{}{
-    Research-oriented Master in Computer Engineering
-}
+    \section{Education}
+    \cventry{Fall 2021--Spring 2023}{TU Delft}{Computer Engineering}{}{}{
+        Research-oriented masters in Computer Engineering, with a focus on software and software/hardware codesign.
+    }
+    \cventry{Fall 2018--Spring 2021}{Virginia Polytechnic}{Computer Engineering}{}{}{
+        Major in Computer Engineering with a minor and specialization in Computer Science.
+        Graduated 1 year early due to accelerated classes, GPA 3.64/4.00 in-major, 3.46/4.00 overall.
+    }
 
-\cventry{Fall 2018--Spring 2021}{Virginia Polytechnic}{Computer Engineering}{}{}{
-    Major in Computer Engineering with a minor and specialization in Computer Science.
-    Graduated 1 year early due to accelerated classes, GPA 3.64/4.00 in-major, 3.46/4.00 overall.
-}
 
-\section{Skills}
+    \section{Skills}
 
-\subsection{Languages}
-\cventry{7 Years Experience}{C++}{}{}{}{
+    \subsection{Languages}
+    \cventry{8 Years Experience}{C++}{}{}{}{
     %Multithreading, Multiprocessor, Low-latency computing, Template Metaprogramming
-    Libraries:
-    Catch2, libsigc++, OpenMP, Intel TBB, Posix Threads,
-    Gtkmm, Qt, OpenGL, GLFW, Magnum, CLI11, spdlog,
-    Cereal, RapidJSON, TOML11, Libsoundio, FFTW
-}
-\cventry{4 Years Experience}{C, Python, Java}{}{}{}{
+        Libraries:
+        Catch2, libsigc++, OpenMP, Intel TBB, Posix Threads,
+        Gtkmm, Qt, OpenGL, GLFW, Magnum, CLI11, spdlog,
+        Cereal, RapidJSON, TOML11, Libsoundio, FFTW
+    }
+    \cventry{5 Years Experience}{C, Python, Java}{}{}{}{
     %Multiprocessor, Real-time systems
-    Libraries:
-    Jansson, LibJWT
-}
-\cventry{In Order of Experience}{Others}{}{}{}{
-    Rust, CUDA, Verilog, HTML + CSS/Sass, Octave/Matlab, MIPS Assembly, x86 Assembly
-}
+        Libraries:
+        Jansson, LibJWT
+    }
+    \cventry{In Order of Experience}{Others}{}{}{}{
+        Rust, CUDA, Verilog, HTML + CSS/Sass, Octave/Matlab, MIPS Assembly, x86 Assembly
+    }
 
-\subsection{Tools}
-\cvitem{}{
-    \begin{multicols}{4}
-        \begin{itemize}
-            \item[] Git
-            \item[] Linux
-            \item[] Valgrind
-            \item[] GDB
-            \item[] Perf
-            \item[] Tensorflow
-            \item[] Travis CI
-            \item[] Github Actions
-            \item[] Ansible
-            \item[] Doxygen
-            \item[] Markdown
-            \item[] \LaTeX
-        \end{itemize}
-    \end{multicols}
-}
+    \subsection{Tools}
+    \cvitem{}{
+        \begin{multicols}{4}
+            \begin{itemize}
+                \item[] Git
+                \item[] Linux
+                \item[] Valgrind
+                \item[] GDB
+                \item[] Perf
+                \item[] Tensorflow
+                \item[] Travis CI
+                \item[] Github Actions
+                \item[] Ansible
+                \item[] Doxygen
+                \item[] Markdown
+                \item[] \LaTeX
+            \end{itemize}
+        \end{multicols}
+    }
 
-\section{Experience}
 
-\subsection{Employment}
-\cventry{May 2021--August 2021}{SIMD Research Internship}{Inria}{}{}{
-    Worked alongside PhD students at Inria Research Center Sophia Antipolis to incorporate SIMD concepts into CGALs
-    collision detection packages, improving performance.
-}
-\cventry{May 2020--August 2020}{Google Summer of Code Apprentice}{CGAL}{}{}{
-    Worked remotely with a mentor in France to develop a new software package.
-    The project is an Octree data structure, used in other packages.
-    Required a mix of working with legacy code and green-field development.
-}
-\cventry{June 2019--August 2019}{Innovation Committee Member}{Telos Corporation}{}{}{
-    Worked in a 7 person group of interns
-    researching the viability of future software security products.
-    Built the frontend of a replacement for Telos’ employee intranet solution.
-}
+    \section{Experience}
 
-\subsection{Projects}
-\cventry{August 2020--June 2021}{Quarter ID}{Python}{}{}{
-    Lead a small team of interdisceplenary engineering students
-    to develop a solution which determines the value of collectible coins using machine vision.
-    Involved industrial imaging and lighting hardware, paired with bespoke software written in Python using OpenCV.
-}
-\cventry{July 2018--Present}{N-Body}{C++}{}{}{
-    Independently building a multi-threaded dynamical simulation tool to improve my
-    familiarity with optimization, build tools, design patterns, and libraries.
-    Incorporated concepts including concurrency, event-driven programming,
-    serialization, cache-optimization, and tree algorithms among others.
-}
-\cventry{August 2020--December 2020}{Spectrogram}{C++}{}{}{
-    Developed a low-latency Spectrogram audio frequency visualizer alongside two other students.
-    Involved navigating real-time limitations in a contemporary event-driven desktop application,
-    as well as CI, build system engineering, and other team management logistics.
-}
+    \subsection{Employment}
+    \cventry{May 2021--August 2021}{SIMD Research Internship}{Inria}{}{}{
+        Worked alongside PhD students at Inria Research Center Sophia Antipolis to incorporate SIMD concepts into CGALs
+        collision detection packages, improving performance.
+    }
+    \cventry{May 2020--August 2020}{Google Summer of Code Apprentice}{CGAL}{}{}{
+        Worked remotely with a mentor in France to develop a new software package.
+        The project is an Octree data structure, used in other packages.
+        Required a mix of working with legacy code and green-field development.
+    }
+    \cventry{June 2019--August 2019}{Innovation Committee Member}{Telos Corp}{}{}{
+        Worked in a 7 person group of interns
+        researching the viability of future software security products.
+        Built the frontend of a replacement for Telos’ employee intranet solution.
+    }
+
+    \subsection{Projects}
+    \cventry{August 2020--June 2021}{Quarter ID}{Python}{}{}{
+        Lead a small team of interdisceplenary engineering students
+        to develop a solution which determines the value of collectible coins using machine vision.
+        Involved industrial imaging and lighting hardware, paired with bespoke software written in Python using OpenCV.
+    }
+    \cventry{July 2018--Present}{N-Body}{C++}{}{}{
+        Independently building a multi-threaded dynamical simulation tool to improve my
+        familiarity with optimization, build tools, design patterns, and libraries.
+        Incorporated concepts including concurrency, event-driven programming,
+        serialization, cache-optimization, and tree algorithms among others.
+    }
+    \cventry{August 2020--December 2020}{Spectrogram}{C++}{}{}{
+        Developed a low-latency Spectrogram audio frequency visualizer alongside two other students.
+        Involved navigating real-time limitations in a contemporary event-driven desktop application,
+        as well as CI, build system engineering, and other team management logistics.
+    }
 
 %\section{References}
 %\cventry{\emailsymbol simon.giraudot@geometryfactory.com}{Dr. Simon Giraudot}{}{}{}{}
